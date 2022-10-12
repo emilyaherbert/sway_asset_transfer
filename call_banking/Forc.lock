@@ -1,0 +1,22 @@
+[[package]]
+name = 'banking_abi'
+source = 'path+from-root-D1EA2CB2218B5E1C'
+dependencies = ['std']
+
+[[package]]
+name = 'call_banking'
+source = 'root'
+dependencies = [
+    'banking_abi',
+    'std',
+]
+
+[[package]]
+name = 'core'
+source = 'path+from-root-815C32BB386C1563'
+dependencies = []
+
+[[package]]
+name = 'std'
+source = 'git+https://github.com/fuellabs/sway?tag=v0.25.2#dfa6224932a97c514b707dcfc300715b2a0895dc'
+dependencies = ['core']

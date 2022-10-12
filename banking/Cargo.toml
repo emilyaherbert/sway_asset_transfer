@@ -1,0 +1,22 @@
+[package]
+authors = ["Emily Herbert <emily.herbert@fuel.sh>"]
+edition = "2021"
+license = "Apache-2.0"
+name = "tests"
+version = "0.0.0"
+
+[dependencies]
+assert_matches = "1.5.0"
+fuel-core = { version = "0.10", default-features = false }
+fuel-gql-client = { version = "0.10", default-features = false }
+fuel-types = "0.5"
+fuel-vm = "0.15"
+fuels = { version = "0.25", features = ["fuel-core-lib"] }
+tokio = { version = "1.12", features = ["rt", "macros"] }
+
+[[test]]
+harness = true
+name = "banking_tests"
+path = "harness.rs"
+
+[workspace]

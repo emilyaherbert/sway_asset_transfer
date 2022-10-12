@@ -1,6 +1,14 @@
 [[package]]
-name = 'asset_pool'
+name = 'banking'
 source = 'root'
+dependencies = [
+    'banking_abi',
+    'std',
+]
+
+[[package]]
+name = 'banking_abi'
+source = 'path+from-root-BE331655BA014F8D'
 dependencies = ['std']
 
 [[package]]

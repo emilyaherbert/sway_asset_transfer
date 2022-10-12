@@ -1,4 +1,9 @@
 [[package]]
+name = 'banking_abi'
+source = 'root'
+dependencies = ['std']
+
+[[package]]
 name = 'core'
 source = 'path+from-root-815C32BB386C1563'
 dependencies = []
@@ -7,8 +12,3 @@ dependencies = []
 name = 'std'
 source = 'git+https://github.com/fuellabs/sway?tag=v0.25.2#dfa6224932a97c514b707dcfc300715b2a0895dc'
 dependencies = ['core']
-
-[[package]]
-name = 'token_pool'
-source = 'root'
-dependencies = ['std']
